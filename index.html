@@ -6,108 +6,225 @@
   <title>Dong Qiu | Academic Homepage</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="page">
     <header class="topbar">
       <div>
-        <div class="eyebrow">Academic Homepage</div>
+        <div
+          class="eyebrow"
+          id="eyebrow"
+          data-en="Academic Homepage"
+          data-zh="学术主页"
+        >
+          Academic Homepage
+        </div>
         <div class="site-name" id="siteName">Dong Qiu</div>
       </div>
-      <button id="langToggle" class="lang-btn">中文</button>
+      <button id="langToggle" class="lang-btn" type="button">中文</button>
     </header>
 
     <section class="card hero">
       <div class="hero-photo-wrap">
         <img src="qiu.png" alt="Dong Qiu" class="hero-photo" />
       </div>
+
       <div class="hero-content">
         <h1 id="name">Dong Qiu</h1>
         <div class="cn-name" id="cnName">邱冬</div>
 
-        <div class="section-tag">Section 01</div>
-        <h2 class="section-title" id="aboutTitle">About</h2>
-        <p class="bio" id="bio">
-          I am a PhD Candidate in Mathematics at Zhejiang University. My research lies at the
-          intersection of inverse problems, partial differential equations, scientific machine
-          learning, and scientific computing, with a particular interest in inverse boundary value
-          problems for nonlinear wave-type equations.
+        <div
+          class="section-tag"
+          id="aboutTag"
+          data-en="Section 01"
+          data-zh="第一部分"
+        >
+          Section 01
+        </div>
+
+        <h2
+          class="section-title"
+          id="aboutTitle"
+          data-en="About"
+          data-zh="个人简介"
+        >
+          About
+        </h2>
+
+        <p
+          class="bio"
+          id="bio"
+          data-en="I am a Ph.D. candidate in Mathematics at Zhejiang University. My research lies at the intersection of inverse problems, partial differential equations, scientific machine learning, and scientific computing, with a particular interest in inverse boundary value problems for nonlinear wave-type equations."
+          data-zh="我是浙江大学数学博士研究生。我的研究方向主要包括反问题、偏微分方程、科学机器学习与科学计算，尤其关注非线性波动型方程的反边值问题。"
+        >
+          I am a Ph.D. candidate in Mathematics at Zhejiang University. My research lies at the
+          intersection of inverse problems, partial differential equations, scientific machine learning,
+          and scientific computing, with a particular interest in inverse boundary value problems for
+          nonlinear wave-type equations.
         </p>
 
         <div class="meta-grid">
-          <div class="meta-item"><strong id="affiliation">Zhejiang University</strong></div>
-          <div class="meta-item" id="title">PhD Candidate in Mathematics</div>
-          <div class="meta-item"><a href="mailto:qiudong@zju.edu.cn">qiudong@zju.edu.cn</a></div>
-          <div class="meta-item"><a href="mailto:qiudongdunk@qq.com">qiudongdunk@qq.com</a></div>
+          <div class="meta-item">
+            <strong
+              id="affiliation"
+              data-en="Zhejiang University"
+              data-zh="浙江大学"
+            >
+              Zhejiang University
+            </strong>
+          </div>
+          <div
+            class="meta-item"
+            id="title"
+            data-en="Ph.D. Candidate in Mathematics"
+            data-zh="数学博士研究生"
+          >
+            Ph.D. Candidate in Mathematics
+          </div>
+          <div class="meta-item">
+            <a href="mailto:qiudong@zju.edu.cn">qiudong@zju.edu.cn</a>
+          </div>
+          <div class="meta-item">
+            <a href="mailto:qiudongdunk@qq.com">qiudongdunk@qq.com</a>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="card">
       <div class="card-head">
-        <h2 id="interestsTitle">Research Interests</h2>
+        <h2
+          id="interestsTitle"
+          data-en="Research Interests"
+          data-zh="研究兴趣"
+        >
+          Research Interests
+        </h2>
       </div>
+
       <div class="interest-grid">
         <div class="pill" data-en="Inverse Problems" data-zh="反问题">Inverse Problems</div>
         <div class="pill" data-en="PDEs" data-zh="偏微分方程">PDEs</div>
-        <div class="pill" data-en="Scientific Machine Learning" data-zh="科学机器学习">Scientific Machine Learning</div>
-        <div class="pill" data-en="Scientific Computing" data-zh="科学计算">Scientific Computing</div>
+        <div class="pill" data-en="Scientific Machine Learning" data-zh="科学机器学习">
+          Scientific Machine Learning
+        </div>
+        <div class="pill" data-en="Scientific Computing" data-zh="科学计算">
+          Scientific Computing
+        </div>
       </div>
     </section>
 
     <section class="card">
       <div class="card-head">
-        <h2 id="publicationsTitle">Publications</h2>
+        <h2
+          id="publicationsTitle"
+          data-en="Publications"
+          data-zh="论文发表"
+        >
+          Publications
+        </h2>
       </div>
 
-      <h3 class="pub-section-title" id="preprintsTitle">Preprints and Submitted Papers</h3>
+      <h3
+        class="pub-section-title"
+        id="preprintsTitle"
+        data-en="Preprints and Submitted Papers"
+        data-zh="预印本与投稿论文"
+      >
+        Preprints and Submitted Papers
+      </h3>
 
       <article class="pub-card">
         <h3>Inverse boundary value problems of determining nonlinear coefficients for the JMGT equation</h3>
         <p class="authors">Dong Qiu, Xiang Xu, Yeqiong Ye, Ting Zhou</p>
-        <p class="venue">arXiv preprint</p>
+        <p class="venue">arXiv preprint, 2026</p>
         <div class="pub-footer">
-          <span class="badge">Preprint</span>
-          <a href="https://arxiv.org/abs/2603.14194" target="_blank" rel="noreferrer">arXiv: 2603.14194</a>
+          <span class="badge" data-en="Preprint" data-zh="预印本">Preprint</span>
+          <a
+            href="https://arxiv.org/abs/2603.14194"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            arXiv: 2603.14194
+          </a>
         </div>
       </article>
 
       <article class="pub-card">
         <h3>Gauge symmetry and uniqueness in inverse problems for the JMGT equation</h3>
         <p class="authors">Dong Qiu, Xiang Xu, Yeqiong Ye, Ting Zhou</p>
-        <p class="venue">preprint, 2026</p>
+        <p class="venue">Preprint, 2026</p>
         <div class="pub-footer">
-          <span class="badge">Preprint</span>
-          <a href="https://arxiv.org/abs/2604.28023" target="_blank" rel="noreferrer">arXiv: 2604.28023</a>
+          <span class="badge" data-en="Preprint" data-zh="预印本">Preprint</span>
+          <a
+            href="https://arxiv.org/abs/2604.28023"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            arXiv: 2604.28023
+          </a>
         </div>
       </article>
 
-      <h3 class="pub-section-title" id="publishedTitle">Published Papers</h3>
+      <h3
+        class="pub-section-title"
+        id="publishedTitle"
+        data-en="Published Papers"
+        data-zh="已发表论文"
+      >
+        Published Papers
+      </h3>
 
       <article class="pub-card">
         <h3>Uniqueness result for semi-linear wave equations with sources</h3>
         <p class="authors">Dong Qiu, Xiang Xu, Yeqiong Ye, Ting Zhou</p>
         <p class="venue">Inverse Problems and Imaging</p>
         <div class="pub-footer">
-          <span class="badge">Published Paper</span>
-          <a href="https://arxiv.org/abs/2510.04810" target="_blank" rel="noreferrer">arXiv: 2510.04810</a>
-          <a href="https://www.aimsciences.org/article/doi/10.3934/ipi.2026030" target="_blank" rel="noreferrer">Journal Website</a>
+          <span
+            class="badge"
+            data-en="Published Paper"
+            data-zh="已发表"
+          >
+            Published Paper
+          </span>
+          <a
+            href="https://arxiv.org/abs/2510.04810"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            arXiv: 2510.04810
+          </a>
+          <a
+            href="https://www.aimsciences.org/article/doi/10.3934/ipi.2026030"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Journal Website
+          </a>
         </div>
       </article>
     </section>
 
     <section class="card">
       <div class="card-head">
-        <h2 id="presentationsTitle">Selected Presentations</h2>
+        <h2
+          id="presentationsTitle"
+          data-en="Selected Presentations"
+          data-zh="代表性学术报告"
+        >
+          Selected Presentations
+        </h2>
       </div>
 
       <ul class="presentation-list">
         <li>
           <span
             id="presentationOne"
-            data-en="Invited talk: Inverse source problems for nonlinear wave equation, Seminar, Fudan University"
-            data-zh="邀请报告：非线性波方程反源问题，复旦大学讨论班"
+            data-en='Invited talk: "Inverse source problems for nonlinear wave equations", Fudan University Seminar'
+            data-zh="邀请报告：“非线性波方程反源问题”，复旦大学讨论班"
           >
-            Invited talk: Inverse source problems for nonlinear wave equation, Seminar, Fudan University
+            Invited talk: "Inverse source problems for nonlinear wave equations",
+            Fudan University Seminar
           </span>
           <span
             class="presentation-date"
@@ -122,10 +239,11 @@
         <li>
           <span
             id="presentationTwo"
-            data-en="Invited talk: Inverse boundary value problems for the JMGT equation, The 15th National Conference on Inverse Problems, Imaging and Applications, Wenzhou"
-            data-zh="邀请报告：JMGT 方程的反边值问题，第十五届全国反问题、成像与应用会议，温州"
+            data-en='Invited talk: "Inverse boundary value problems for the JMGT equation", The 15th National Conference on Inverse Problems, Imaging and Applications, Wenzhou'
+            data-zh="邀请报告：“JMGT 方程的反边值问题”，第十五届全国反问题、成像与应用会议，温州"
           >
-            Invited talk: Inverse boundary value problems for the JMGT equation, The 15th National Conference on Inverse Problems, Imaging and Applications, Wenzhou
+            Invited talk: "Inverse boundary value problems for the JMGT equation",
+            The 15th National Conference on Inverse Problems, Imaging and Applications, Wenzhou
           </span>
           <span
             class="presentation-date"
@@ -140,7 +258,7 @@
             id="presentationTwoSlides"
             href="ipjmgt.pdf"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             data-en="Slides"
             data-zh="报告幻灯片"
           >
@@ -150,100 +268,149 @@
       </ul>
     </section>
 
+    <section class="card">
+      <div class="card-head">
+        <h2
+          id="thesisTitle"
+          data-en="Ph.D. Thesis"
+          data-zh="博士毕业论文"
+        >
+          Ph.D. Thesis
+        </h2>
+      </div>
 
-        <section class="card">
-  <div class="card-head">
-    <h2 id="thesisTitle" data-en="Ph.D. Thesis" data-zh="博士毕业论文">Ph.D. Thesis</h2>
-  </div>
-
-  <article class="pub-card thesis-card">
-    <h3
-      id="thesisName"
-      data-en="Uniqueness in inverse coefficient problems for two classes of nonlinear wave equations"
-      data-zh="两类非线性波动方程反系数问题唯一性研究"
-    >
-      Uniqueness in inverse coefficient problems for two classes of nonlinear wave equations
-    </h3>
-    <p
-      class="authors"
-      id="thesisAdvisor"
-      data-en="Advisor: Prof. Xiang Xu"
-      data-zh="指导老师：徐翔教授"
-    >
-      Advisor: Prof. Xiang Xu
-    </p>
-    <p
-      class="venue"
-      id="thesisVenue"
-      data-en="Ph.D. thesis, Zhejiang University"
-      data-zh="博士毕业论文，浙江大学"
-    >
-      Ph.D. thesis, Zhejiang University
-    </p>
-    <div class="pub-footer">
-      <span
-        class="badge"
-        id="thesisBadge"
-        data-en="Ph.D. Thesis"
-        data-zh="博士毕业论文"
-      >
-        Ph.D. Thesis
-      </span>
-      <a
-        id="thesisPdf"
-        href="thesis.pdf"
-        target="_blank"
-        rel="noreferrer"
-        data-en="Thesis PDF"
-        data-zh="论文全文"
-      >
-        Thesis PDF
-      </a>
-      <a
-        id="thesisDefenseSlides"
-        href="phd%20defense%20beamer.pdf"
-        target="_blank"
-        rel="noreferrer"
-        data-en="Ph.D. Defense Slides"
-        data-zh="博士论文答辩幻灯片"
-      >
-        Ph.D. Defense Slides
-      </a>
-    </div>
-  </article>
-</section>
+      <article class="pub-card thesis-card">
+        <h3
+          id="thesisName"
+          data-en="Uniqueness in inverse coefficient problems for two classes of nonlinear wave equations"
+          data-zh="两类非线性波动方程反系数问题唯一性研究"
+        >
+          Uniqueness in inverse coefficient problems for two classes of nonlinear wave equations
+        </h3>
+        <p
+          class="authors"
+          id="thesisAdvisor"
+          data-en="Advisor: Prof. Xiang Xu"
+          data-zh="指导老师：徐翔教授"
+        >
+          Advisor: Prof. Xiang Xu
+        </p>
+        <p
+          class="venue"
+          id="thesisVenue"
+          data-en="Ph.D. thesis, Zhejiang University, 2026"
+          data-zh="博士毕业论文，浙江大学，2026年"
+        >
+          Ph.D. thesis, Zhejiang University, 2026
+        </p>
+        <div class="pub-footer">
+          <span
+            class="badge"
+            id="thesisBadge"
+            data-en="Ph.D. Thesis"
+            data-zh="博士毕业论文"
+          >
+            Ph.D. Thesis
+          </span>
+          <a
+            id="thesisPdf"
+            href="thesis.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-en="Thesis PDF"
+            data-zh="论文全文"
+          >
+            Thesis PDF
+          </a>
+          <a
+            id="thesisDefenseSlides"
+            href="phd%20defense%20beamer.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-en="Defense Slides"
+            data-zh="答辩幻灯片"
+          >
+            Defense Slides
+          </a>
+        </div>
+      </article>
+    </section>
 
     <section class="card">
       <div class="card-head">
-        <h2 id="linksTitle">Links</h2>
+        <h2
+          id="linksTitle"
+          data-en="Links"
+          data-zh="相关链接"
+        >
+          Links
+        </h2>
       </div>
+
       <div class="link-grid">
-        <a class="link-card" href="https://scholar.google.com/citations?user=msZEMNQAAAAJ&hl=en" target="_blank" rel="noreferrer">
+        <a
+          class="link-card"
+          href="https://scholar.google.com/citations?user=msZEMNQAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div class="link-label">Google Scholar</div>
           <div class="link-text">scholar.google.com/qiudongpage</div>
         </a>
-        <a class="link-card" href="https://arxiv.org/a/qiu_d_3.html" target="_blank" rel="noreferrer">
+
+        <a
+          class="link-card"
+          href="https://arxiv.org/a/qiu_d_3.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div class="link-label">arXiv</div>
           <div class="link-text">arXiv: qiu_d_3</div>
         </a>
-        <a class="link-card" href="cv2.pdf" target="_blank" rel="noreferrer">
+
+        <a
+          class="link-card"
+          href="cv2.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div class="link-label" id="cvLabel">CV</div>
-          <div class="link-text" id="cvText">Download CV</div>
+          <div
+            class="link-text"
+            id="cvText"
+            data-en="Download CV"
+            data-zh="下载简历"
+          >
+            Download CV
+          </div>
         </a>
       </div>
     </section>
 
-
-
     <section class="card">
       <div class="card-head">
-        <h2 id="contactTitle">Contact</h2>
+        <h2
+          id="contactTitle"
+          data-en="Contact"
+          data-zh="联系方式"
+        >
+          Contact
+        </h2>
       </div>
+
       <div class="contact-grid two">
         <div class="contact-card">
-          <div class="contact-label" id="emailLabel">Email</div>
+          <div
+            class="contact-label"
+            id="emailLabel"
+            data-en="Email"
+            data-zh="邮箱"
+          >
+            Email
+          </div>
           <a href="mailto:qiudong@zju.edu.cn">qiudong@zju.edu.cn</a>
         </div>
+
         <div class="contact-card">
           <div class="contact-label">QQ Mail</div>
           <a href="mailto:qiudongdunk@qq.com">qiudongdunk@qq.com</a>
@@ -251,7 +418,12 @@
       </div>
     </section>
 
-    <footer class="footer" id="footerText">
+    <footer
+      class="footer"
+      id="footerText"
+      data-en="Minimal academic homepage for research presentation and contact."
+      data-zh="用于展示学术研究、论文与联系方式的个人学术主页。"
+    >
       Minimal academic homepage for research presentation and contact.
     </footer>
   </div>
