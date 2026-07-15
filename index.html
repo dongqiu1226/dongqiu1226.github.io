@@ -22,7 +22,10 @@
         <span class="brand-mark" aria-hidden="true">DQ</span>
         <span>
           <span class="eyebrow" data-en="Academic Homepage" data-zh="个人学术主页">Academic Homepage</span>
-          <span class="site-name">Dong Qiu · 邱冬</span>
+          <span class="site-name">
+            <span class="site-name-en">Dong Qiu</span>
+            <span class="site-name-zh">邱冬</span>
+          </span>
         </span>
       </a>
 
@@ -34,15 +37,10 @@
         <a href="#publications" data-en="Publications" data-zh="论文">Publications</a>
       </nav>
 
-      <button
-        id="langToggle"
-        class="lang-btn"
-        type="button"
-        data-en="中文"
-        data-zh="English"
-      >
-        中文
-      </button>
+      <div class="language-switch" role="group" aria-label="Language">
+        <button class="language-option is-active" type="button" data-lang="en" aria-pressed="true">English</button>
+        <button class="language-option" type="button" data-lang="zh" aria-pressed="false">中文</button>
+      </div>
     </header>
 
     <main id="main">
@@ -58,11 +56,8 @@
         </div>
 
         <div class="hero-content">
-          <div class="section-kicker" data-en="Mathematics · Inverse Problems" data-zh="数学 · 反问题">
-            Mathematics · Inverse Problems
-          </div>
-          <h1 id="name" data-en="Dong Qiu" data-zh="邱冬">Dong Qiu</h1>
-          <p class="name-alt" data-en="邱冬" data-zh="Dong Qiu">邱冬</p>
+          <h1 id="name">Dong Qiu</h1>
+          <p class="name-alt" lang="zh-CN">邱冬</p>
 
           <p
             class="role"
@@ -182,6 +177,21 @@
         <ol class="timeline">
           <li class="timeline-item">
             <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-date">2017.09 — 2021.06</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <h3 data-en="Southeast University" data-zh="东南大学">Southeast University</h3>
+                <span data-en="Nanjing, China" data-zh="中国南京">Nanjing, China</span>
+              </div>
+              <p class="timeline-role" data-en="B.Sc. in Mathematics and Applied Mathematics" data-zh="数学与应用数学学士">
+                B.Sc. in Mathematics and Applied Mathematics
+              </p>
+              <p data-en="Chien-Shiung Wu College" data-zh="吴健雄学院">Chien-Shiung Wu College</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
             <div class="timeline-date">2021.09 — 2026.06</div>
             <div class="timeline-body">
               <div class="timeline-heading">
@@ -194,21 +204,6 @@
               <p data-en="School of Mathematical Sciences · Advisor: Prof. Xiang Xu" data-zh="数学科学学院 · 博士生导师：徐翔教授">
                 School of Mathematical Sciences · Advisor: Prof. Xiang Xu
               </p>
-            </div>
-          </li>
-
-          <li class="timeline-item">
-            <div class="timeline-marker" aria-hidden="true"></div>
-            <div class="timeline-date">2017.09 — 2021.06</div>
-            <div class="timeline-body">
-              <div class="timeline-heading">
-                <h3 data-en="Southeast University" data-zh="东南大学">Southeast University</h3>
-                <span data-en="Nanjing, China" data-zh="中国南京">Nanjing, China</span>
-              </div>
-              <p class="timeline-role" data-en="B.Sc. in Mathematics and Applied Mathematics" data-zh="数学与应用数学学士">
-                B.Sc. in Mathematics and Applied Mathematics
-              </p>
-              <p data-en="Chien-Shiung Wu College" data-zh="吴健雄学院">Chien-Shiung Wu College</p>
             </div>
           </li>
         </ol>
@@ -247,9 +242,6 @@
             <div class="section-number">04</div>
             <h2 id="publicationsTitle" data-en="Publications" data-zh="学术成果">Publications</h2>
           </div>
-          <p class="section-summary" data-en="Selected papers on nonlinear inverse problems." data-zh="非线性反问题方向的代表性论文。">
-            Selected papers on nonlinear inverse problems.
-          </p>
         </div>
 
         <h3 class="subsection-title" data-en="Preprints and Submitted Papers" data-zh="预印本与投稿论文">
@@ -293,7 +285,7 @@
         <h3 class="subsection-title subsection-spaced" data-en="Published Papers" data-zh="已发表论文">Published Papers</h3>
 
         <article class="publication">
-          <div class="publication-year">2026</div>
+          <div class="publication-year">2027</div>
           <div>
             <h3
               data-en="Uniqueness result for semi-linear wave equations with sources"
@@ -302,11 +294,13 @@
               Uniqueness result for semi-linear wave equations with sources
             </h3>
             <p class="authors"><strong>Dong Qiu</strong>, Xiang Xu, Yeqiong Ye, Ting Zhou</p>
-            <p class="venue"><em>Inverse Problems and Imaging</em></p>
+            <p class="venue">
+              <em>Inverse Problems and Imaging</em><span data-en=", vol. 27 (2027), pp. 1–26." data-zh="，第 27 卷（2027），第 1–26 页。">, vol. 27 (2027), pp. 1–26.</span>
+            </p>
             <div class="publication-footer">
               <span class="badge" data-en="Published" data-zh="已发表">Published</span>
               <a href="https://arxiv.org/abs/2510.04810" target="_blank" rel="noopener noreferrer">arXiv:2510.04810 ↗</a>
-              <a href="https://www.aimsciences.org/article/doi/10.3934/ipi.2026030" target="_blank" rel="noopener noreferrer" data-en="Journal ↗" data-zh="期刊页面 ↗">Journal ↗</a>
+              <a href="https://doi.org/10.3934/ipi.2026030" target="_blank" rel="noopener noreferrer">DOI: 10.3934/ipi.2026030 ↗</a>
             </div>
           </div>
         </article>
@@ -415,9 +409,6 @@
 
     <footer class="footer">
       <span>© 2026 Dong Qiu</span>
-      <span data-en="Mathematics · Inverse Problems · Scientific Computing" data-zh="数学 · 反问题 · 科学计算">
-        Mathematics · Inverse Problems · Scientific Computing
-      </span>
     </footer>
   </div>
 
