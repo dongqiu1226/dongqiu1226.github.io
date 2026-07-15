@@ -116,9 +116,21 @@ button:focus-visible {
 }
 
 .site-name {
-  display: block;
+  display: grid;
+  line-height: 1.05;
+}
+
+.site-name-en {
   font-size: 15px;
   font-weight: 760;
+}
+
+.site-name-zh {
+  margin-top: 3px;
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", "Songti SC", serif;
+  font-size: 11px;
+  font-weight: 650;
 }
 
 .nav {
@@ -140,22 +152,36 @@ button:focus-visible {
   color: var(--accent);
 }
 
-.lang-btn {
+.language-switch {
+  display: inline-flex;
+  gap: 2px;
   border: 1px solid var(--line);
   border-radius: 999px;
   background: var(--surface-strong);
-  color: var(--ink);
-  cursor: pointer;
-  font: inherit;
-  font-size: 13px;
-  font-weight: 700;
-  padding: 9px 15px;
-  transition: border-color 160ms ease, transform 160ms ease;
+  padding: 3px;
 }
 
-.lang-btn:hover {
-  border-color: var(--accent);
+.language-option {
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 7px 11px;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.language-option:hover {
   transform: translateY(-1px);
+}
+
+.language-option.is-active {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(24, 79, 69, 0.18);
 }
 
 .card {
@@ -209,7 +235,7 @@ button:focus-visible {
 }
 
 .hero h1 {
-  margin: 9px 0 0;
+  margin: 0;
   font-family: Georgia, "Times New Roman", "Songti SC", serif;
   font-size: clamp(46px, 7vw, 72px);
   font-weight: 500;
@@ -218,10 +244,12 @@ button:focus-visible {
 }
 
 .name-alt {
-  margin: 8px 0 0;
+  margin: 10px 0 0;
   color: var(--muted);
   font-family: Georgia, "Times New Roman", "Songti SC", serif;
-  font-size: 18px;
+  font-size: clamp(22px, 2.5vw, 30px);
+  font-weight: 500;
+  line-height: 1;
 }
 
 .role {
@@ -751,8 +779,12 @@ button:focus-visible {
     display: none;
   }
 
-  .site-name {
+  .site-name-en {
     font-size: 13px;
+  }
+
+  .site-name-zh {
+    font-size: 10px;
   }
 
   .card {
