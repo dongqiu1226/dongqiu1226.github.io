@@ -642,6 +642,10 @@ button:focus-visible {
   gap: 11px;
 }
 
+.link-grid > :last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .link-card {
   display: grid;
   grid-template-columns: 1fr auto;
