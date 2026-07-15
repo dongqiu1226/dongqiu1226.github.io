@@ -1,5 +1,6 @@
 const translations = document.querySelectorAll("[data-en][data-zh]");
 const translatedImages = document.querySelectorAll("[data-alt-en][data-alt-zh]");
+const translatedLinks = document.querySelectorAll("[data-href-en][data-href-zh]");
 const languageToggle = document.getElementById("langToggle");
 const description = document.querySelector('meta[name="description"]');
 
@@ -41,6 +42,10 @@ function applyLanguage(nextLanguage, persist = true) {
 
   translatedImages.forEach((image) => {
     image.alt = image.dataset[`alt${language === "en" ? "En" : "Zh"}`];
+  });
+
+  translatedLinks.forEach((link) => {
+    link.href = link.dataset[`href${language === "en" ? "En" : "Zh"}`];
   });
 
   document.documentElement.lang = language === "en" ? "en" : "zh-CN";
